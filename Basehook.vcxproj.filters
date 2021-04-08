@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{db25bb57-5ce3-4622-9041-59e6ceb8cf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\VMTHook">
+      <UniqueIdentifier>{ad078264-8183-4aa1-8f02-26e1731c2626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basehook">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Basehook\Hooks">
+      <UniqueIdentifier>{48973e23-c3ec-4a6c-a581-459a15b48e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK">
+      <UniqueIdentifier>{2ecf8ffa-517a-434e-9214-c11bf59998c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK\Classes">
+      <UniqueIdentifier>{d1eee60b-9f1f-428e-8400-e82cc969172b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK\Definitions">
+      <UniqueIdentifier>{39f837bf-01d1-4684-9284-649880305b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK\Interfaces">
+      <UniqueIdentifier>{f15389e0-4345-400c-90f5-b44feb97060f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK\Structures">
+      <UniqueIdentifier>{0bd72f3e-3782-4a26-b998-fec9ae4326c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Source SDK\Utilities">
+      <UniqueIdentifier>{a139e3e5-f522-43b5-b595-46fe1758eb08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Basehook.cpp">
+      <Filter>Basehook</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hooks\RunCommand.cpp">
+      <Filter>Basehook\Hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\vmthook\vmthook.h">
+      <Filter>Dependencies\VMTHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hooks\Hooks.h">
+      <Filter>Basehook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\SDK.h">
+      <Filter>Dependencies\Source SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Utilities\Interfaces.h">
+      <Filter>Dependencies\Source SDK\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Interfaces\IClientEntityList.h">
+      <Filter>Dependencies\Source SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Interfaces\IVEngineClient.h">
+      <Filter>Dependencies\Source SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Classes\CUserCmd.h">
+      <Filter>Dependencies\Source SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Classes\IClientEntity.h">
+      <Filter>Dependencies\Source SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Interfaces\IPrediction.h">
+      <Filter>Dependencies\Source SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cstrike\Definitions\Definitions.h" />
+  </ItemGroup>
+</Project>
